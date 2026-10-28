@@ -1,0 +1,18 @@
+// benburadan her runladığımda port farklı olduğundan eski kayıtlara erişemiyordum  
+// bu sorunu sabit port kullanarak çözmek için launch.json dosyasını aşağıdaki gibi düzenledim.
+//  Bu sayede her runladığımda aynı port ile kayıtlar gelecek ve eski kayıtlara erişim sağlayacağım.
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "flutterödev (Chrome sabit port)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "chrome",
+      "args": [
+        "--web-port=5173",
+        "--web-browser-flag=--user-data-dir=C:\\flutter_chrome_profile"
+      ]
+    }
+  ]
+}
